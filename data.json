@@ -1,0 +1,251 @@
+{
+  "settings": {
+    "college": "MIT Academy of Engineering, Alandi, Pune",
+    "threshold": 75,
+    "campus": {
+      "lat": 18.6775,
+      "lng": 73.8987
+    },
+    "radius": 250
+  },
+  "users": [
+    {
+      "id": "S001",
+      "name": "Aarav Patil",
+      "email": "aarav@mit.edu",
+      "password": "student123",
+      "role": "student",
+      "roll": "CSE-001",
+      "year": "Second Year"
+    },
+    {
+      "id": "S002",
+      "name": "Ananya Sharma",
+      "email": "ananya@mit.edu",
+      "password": "student123",
+      "role": "student",
+      "roll": "CSE-002",
+      "year": "Second Year"
+    },
+    {
+      "id": "T001",
+      "name": "Prof. Demo Teacher",
+      "email": "teacher@mit.edu",
+      "password": "teacher123",
+      "role": "teacher",
+      "department": "Computer Engineering"
+    },
+    {
+      "id": "A001",
+      "name": "College Admin",
+      "email": "admin@mit.edu",
+      "password": "admin123",
+      "role": "admin"
+    }
+  ],
+  "courses": [
+    {
+      "id": "CSE201",
+      "name": "Data Structures",
+      "code": "CSE201",
+      "teacherId": "T001",
+      "teacher": "Prof. Demo Teacher",
+      "total": 20,
+      "held": 12,
+      "room": "A-204"
+    },
+    {
+      "id": "CSE202",
+      "name": "Database Management Systems",
+      "code": "CSE202",
+      "teacherId": "T001",
+      "teacher": "Prof. Demo Teacher",
+      "total": 18,
+      "held": 10,
+      "room": "A-205"
+    },
+    {
+      "id": "CSE203",
+      "name": "Applied Mathematics",
+      "code": "CSE203",
+      "teacherId": "T001",
+      "teacher": "Prof. Demo Teacher",
+      "total": 22,
+      "held": 17,
+      "room": "B-101"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "a1",
+      "studentId": "S001",
+      "courseId": "CSE201",
+      "status": "present",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "a2",
+      "studentId": "S001",
+      "courseId": "CSE201",
+      "status": "present",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "a3",
+      "studentId": "S001",
+      "courseId": "CSE201",
+      "status": "absent",
+      "date": "2026-11-19"
+    },
+    {
+      "id": "a4",
+      "studentId": "S002",
+      "courseId": "CSE201",
+      "status": "present",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "a5",
+      "studentId": "S002",
+      "courseId": "CSE201",
+      "status": "absent",
+      "date": "2026-11-18"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "4b1029af-c282-4baa-b26e-b2b625cd8417",
+      "token": "624d20148ac0ad13e08864234a230a8ec59e9fe5a29359d4",
+      "courseId": "CSE201",
+      "teacherId": "T001",
+      "createdAt": 1795292958906,
+      "expiresAt": 1795293258906,
+      "lat": 18.6775,
+      "lng": 73.8987,
+      "radius": 250,
+      "active": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": "a17cb91b-d801-436e-a5c4-f2a1ce5d714b",
+      "key": "low-S001-CSE201-17",
+      "to": "S001",
+      "courseId": "CSE201",
+      "title": "Attendance below 75%",
+      "message": "Data Structures: your attendance is 17%. Please meet your teacher and attend upcoming lectures.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "2cc4731f-d7bf-4571-90e5-116913130c91",
+      "key": "low-S001-CSE201-17-teacher",
+      "to": "T001",
+      "courseId": "CSE201",
+      "title": "Low attendance alert",
+      "message": "Aarav Patil (CSE-001) has 17% attendance in Data Structures.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "baa3bc7c-ff21-42d8-9675-75187528936a",
+      "key": "low-S001-CSE202-0",
+      "to": "S001",
+      "courseId": "CSE202",
+      "title": "Attendance below 75%",
+      "message": "Database Management Systems: your attendance is 0%. Please meet your teacher and attend upcoming lectures.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "e7f5aff1-5d5f-4246-81de-4b459151b15d",
+      "key": "low-S001-CSE202-0-teacher",
+      "to": "T001",
+      "courseId": "CSE202",
+      "title": "Low attendance alert",
+      "message": "Aarav Patil (CSE-001) has 0% attendance in Database Management Systems.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "689f9d61-4447-42f3-9dcf-9c65f0a3da13",
+      "key": "low-S001-CSE203-0",
+      "to": "S001",
+      "courseId": "CSE203",
+      "title": "Attendance below 75%",
+      "message": "Applied Mathematics: your attendance is 0%. Please meet your teacher and attend upcoming lectures.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "36b19c46-cce7-494b-a9ec-9c86a6c1a456",
+      "key": "low-S001-CSE203-0-teacher",
+      "to": "T001",
+      "courseId": "CSE203",
+      "title": "Low attendance alert",
+      "message": "Aarav Patil (CSE-001) has 0% attendance in Applied Mathematics.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "3178edb7-0a88-47ca-85f5-d4b7c60a9aee",
+      "key": "low-S002-CSE201-8",
+      "to": "S002",
+      "courseId": "CSE201",
+      "title": "Attendance below 75%",
+      "message": "Data Structures: your attendance is 8%. Please meet your teacher and attend upcoming lectures.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "3bc7abd4-9c8d-424a-a8ac-e7f083791a84",
+      "key": "low-S002-CSE201-8-teacher",
+      "to": "T001",
+      "courseId": "CSE201",
+      "title": "Low attendance alert",
+      "message": "Ananya Sharma (CSE-002) has 8% attendance in Data Structures.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "a086d7f8-7aa3-4dba-8df3-b5c6eca4111b",
+      "key": "low-S002-CSE202-0",
+      "to": "S002",
+      "courseId": "CSE202",
+      "title": "Attendance below 75%",
+      "message": "Database Management Systems: your attendance is 0%. Please meet your teacher and attend upcoming lectures.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "7a96983f-ebd3-454d-8859-27015a251faa",
+      "key": "low-S002-CSE202-0-teacher",
+      "to": "T001",
+      "courseId": "CSE202",
+      "title": "Low attendance alert",
+      "message": "Ananya Sharma (CSE-002) has 0% attendance in Database Management Systems.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "24b52baa-560e-490a-88aa-fa74db6f67b0",
+      "key": "low-S002-CSE203-0",
+      "to": "S002",
+      "courseId": "CSE203",
+      "title": "Attendance below 75%",
+      "message": "Applied Mathematics: your attendance is 0%. Please meet your teacher and attend upcoming lectures.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    },
+    {
+      "id": "9cccd2ec-9501-4096-a2a2-3905c1908f6d",
+      "key": "low-S002-CSE203-0-teacher",
+      "to": "T001",
+      "courseId": "CSE203",
+      "title": "Low attendance alert",
+      "message": "Ananya Sharma (CSE-002) has 0% attendance in Applied Mathematics.",
+      "createdAt": "2026-11-21T20:27:24.125Z",
+      "read": false
+    }
+  ]
+}
